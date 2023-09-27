@@ -1,6 +1,70 @@
-.pt_0 {
-  padding-top: 0;
+/* Deep-purple Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #5e35b1;
+  --primary-hover: #512da8;
+  --primary-focus: rgba(94, 53, 177, 0.125);
+  --primary-inverse: #fff;
+}
+
+/* Deep-purple Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #5e35b1;
+    --primary-hover: #673ab7;
+    --primary-focus: rgba(94, 53, 177, 0.25);
+    --primary-inverse: #fff;
+  }
+}
+
+/* Deep-purple Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #5e35b1;
+  --primary-hover: #673ab7;
+  --primary-focus: rgba(94, 53, 177, 0.25);
+  --primary-inverse: #fff;
+}
+
+/* Deep-purple (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+
+  /* Color Palette  */
+  --p_lemon: #f2ff49;
+  --p_red: #ff4242;
+  --p_grape: #5e35b1;
+  --p_pink: #fb62f6;
+  --p_celeste: #b3fffc;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+strong {
+  font-size: x-large;
+  color: var(--p_red);
 }
 .banner {
   grid-column: span 3;
+}
+.pt_0 {
+  padding-top: 0;
+}
+.iconList {
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 3rem;
+}
+.iconLink {
+  height: 2rem;
+}
+.hamburger {
+  height: 1.5rem;
 }
