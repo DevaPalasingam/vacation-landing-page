@@ -1,6 +1,6 @@
 # Vacation landing page
 
-A sample landing page for a vacation website. Built with plain CSS.
+A sample landing page for a vacation website. Built with PicoCSS.
 
 ## Inspiration
 

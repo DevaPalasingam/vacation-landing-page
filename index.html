@@ -3,48 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" href="/assets/pico.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <title>TravelSite</title>
   </head>
   <body>
-    <header>
-      <a href="/" class="logo"
-        ><span class="d_pink">Travel</span><span class="blue">Site</span></a
-      >
-      <div>
-        <a href="/">
-          <img
-            class="icon grow"
-            src="/assets/fb_icon.png"
-            alt="Facebook Icon"
-          />
-        </a>
-        <a href="/">
-          <img
-            class="icon grow"
-            src="/assets/ig_icon.png"
-            alt="Instagram Icon"
-          />
-        </a>
-        <a href="/">
-          <img class="icon grow" src="/assets/gh_icon.png" alt="GitHub Icon" />
-        </a>
-      </div>
-      <div>
-        <img
-          class="icon grow"
-          src="/assets/hamburger_icon.png"
-          alt="Hamburger Icon"
-        />
-      </div>
-    </header>
-    <section>
+    <main class="container pt_0">
       <nav>
-        <a href="/" class="navLink">Home</a>
-        <a href="/" class="navLink">Find a place to visit</a>
-        <a href="/" class="navLink">About us</a>
+        <ul>
+          <li><strong>Brand</strong></li>
+        </ul>
+        <ul>
+          <li><img src="/assets/fb_icon.png" alt="Facebook Icon" /></li>
+          <li><img src="/assets/ig_icon.png" alt="Instagram Icon" /></li>
+          <li><img src="/assets/gh_icon.png" alt="GitHub Icon" /></li>
+        </ul>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#" role="button">Button</a></li>
+        </ul>
       </nav>
-      <div>There</div>
-    </section>
+      <div class="grid">
+        <div>
+          <aside>
+            <nav>
+              <ul>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+                <li><a href="#">Link</a></li>
+              </ul>
+            </nav>
+          </aside>
+        </div>
+        <div class="banner">Travel + Ease</div>
+      </div>
+      <div class="grid">
+        <article>I'm a card!</article>
+        <article>I'm a card!</article>
+      </div>
+    </main>
   </body>
 </html>

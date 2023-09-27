@@ -1,63 +1,6 @@
-:root {
-  --p_purple: #cdb4db;
-  --p_light_pink: #ffc8dd;
-  --p_dark_pink: #ffafcc;
-  --p_light_blue: #bde0fe;
-  --p_blue: #a2d2ff;
-  --p_dark_blue: #023047;
+.pt_0 {
+  padding-top: 0;
 }
-body {
-  padding: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #fefae0;
-}
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-section {
-  display: flex;
-  justify-content: start;
-}
-nav {
-  width: 20%;
-}
-a {
-  text-decoration: none;
-}
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
-.navLink {
-  display: flex;
-  flex-direction: column;
-  color: var(--p_dark_blue);
-  padding-top: 0.3rem;
-}
-.icon {
-  height: 2rem;
-}
-.grow {
-  transition: all 0.2s ease-in-out;
-}
-.grow:hover {
-  transform: scale(1.1);
-}
-.d_pink {
-  color: var(--p_dark_pink);
-}
-.l_pink {
-  color: var(--p_light_pink);
-}
-.blue {
-  color: var(--p_blue);
-}
-.d_blue {
-  color: var(--p_dark_blue);
+.banner {
+  grid-column: span 3;
 }
